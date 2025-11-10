@@ -1,0 +1,25 @@
+{
+  "name": "travelmate-rental-services",
+  "version": "1.0.0",
+  "description": "\"TarvelMate Rental Services\" :- A Platform for Multi-Vehicle Rental Services.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaikishan001/TravelMate-Rental-services.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaikishan001/TravelMate-Rental-services/issues"
+  },
+  "homepage": "https://github.com/jaikishan001/TravelMate-Rental-services#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}

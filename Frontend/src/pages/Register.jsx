@@ -109,7 +109,7 @@ export default function Registerr() {
           <div className="flex-1 h-px bg-gray-300"></div>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} action="/do-register" method="post" className="space-y-5">
           <div>
             <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
               Full Name
@@ -140,6 +140,22 @@ export default function Registerr() {
               }`}
             />
             {errorField === "email" && <p className="text-red-500 text-sm mt-1">{error}</p>}
+          </div>
+
+          <div>
+            <label htmlFor="phone_no" className="block text-gray-700 font-medium mb-2">
+              Phone Number
+            </label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              onChange={handleChange}
+              className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
+                errorField === "phone_no" ? "border-red-500 focus:ring-red-500" : "focus:ring-blue-500"
+              }`}
+            />
+            {errorField === "Phone_no" && <p className="text-red-500 text-sm mt-1">{error}</p>}
           </div>
 
           <div>
